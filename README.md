@@ -4,9 +4,13 @@ TL;DR: generate thread trace (JSON) from Java
 
 project sibling of <https://github.com/PicoJr/thread-time>
 
-![example.png](res/out.png)
+![small.png](res/4_threads_16_tasks.png)
 
 > Thread pool with 4 threads and 16 tasks
+
+![big.png](res/16_threads_256_tasks.png)
+
+> Thread pool with 16 threads and 256 tasks
 
 ## How it Works
 
@@ -35,4 +39,4 @@ project sibling of <https://github.com/PicoJr/thread-time>
 
 ## Example
 
-see `res/out.json`
+see `res/`
