@@ -3,18 +3,18 @@ package tracker;
 import java.time.Instant;
 
 public class DefaultSegment implements Segment {
-    private final int group;
+    private final long group;
     private final String text;
     private Instant start;
     private Instant end;
 
-    DefaultSegment(String text, int group) {
+    DefaultSegment(String text, long group) {
         this.text = text;
         this.group = group;
     }
 
     @Override
-    public int getGroup() {
+    public long getGroup() {
         return this.group;
     }
 

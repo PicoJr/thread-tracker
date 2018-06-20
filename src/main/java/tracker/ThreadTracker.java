@@ -11,7 +11,7 @@ interface ThreadTracker {
      * @param group of segment
      * @return segment id
      */
-    long createSegment(String text, int group);
+    long createSegment(String text, long group);
 
     /** Start segment with id id
      * id obtained from {@link #createSegment}

@@ -24,7 +24,7 @@ public class DefaultThreadTracker implements ThreadTracker {
     }
 
     @Override
-    public long createSegment(String text, int group) {
+    public synchronized long createSegment(String text, long group) {
         Segment segment = new DefaultSegment(text, group);
         segments.put(atomicSegmentId.get(), segment);
         return atomicSegmentId.getAndIncrement();

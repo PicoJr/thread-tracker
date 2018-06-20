@@ -4,7 +4,7 @@ import java.time.Instant;
 
 public interface Segment {
 
-    int getGroup();
+    long getGroup();
 
     String getText();
 
